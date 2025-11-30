@@ -59,21 +59,58 @@ Upload your resume and get instant, AI-based feedback to improve structure, read
 ### 1️⃣ Clone the Repository  
 ```bash
 git clone https://github.com/SurajJaybhaye/Quick_AI-AI-SaaS-Web-Application.git
+
 cd Quick_AI-AI-SaaS-Web-Application
-2️⃣ Install Dependencies
-bash
-Copy code
+
+---
+
+2️⃣ Server Setup
+```bash 
+cd server
 npm install
-3️⃣ Setup Environment Variables
+
+---
+
+Setup Environment Variables
 Create a .env file in the root folder with:
 
-ini
-Copy code
-OPENAI_API_KEY=your_openai_api_key
-CLERK_API_KEY=your_clerk_api_key
-DATABASE_URL=your_postgresql_url
-4️⃣ Run the App
-bash
-Copy code
+```bash
+DATABASE_URL=your_Postgtesql_url
+
+#Clerk Auth
+CLERK_PUBLISHABLE_KEY=your_clerk_url
+CLERK_SECRET_KEY=your_clerk_key
+
+#Google Gemini
+GEMINI_API_KEY=your_gemini_key
+
+#Clipdrop
+CLIPDROP_API_KEY=your_clipdrop_key
+
+#Cloudinary
+CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_cloudinary_key
+CLOUDINARY_API_SECRET=your_cloudinary_secret
+
+---
+
+Run the Server - 
+```bash 
 npm run dev
-📸 Screenshots
+---
+
+3️⃣ Client Setup
+```bash
+cd ..
+cd client 
+---
+Setup Environment Variables
+Create a .env file in the root folder with:
+```bash
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+VITE_BASE_URL=your_backend_url
+---
+Run the Server - 
+```bash
+npm run dev
+---
