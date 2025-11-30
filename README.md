@@ -59,58 +59,57 @@ Upload your resume and get instant, AI-based feedback to improve structure, read
 ### 1️⃣ Clone the Repository  
 ```bash
 git clone https://github.com/SurajJaybhaye/Quick_AI-AI-SaaS-Web-Application.git
-
 cd Quick_AI-AI-SaaS-Web-Application
 
----
-
 2️⃣ Server Setup
-```bash 
 cd server
 npm install
 
----
-
 Setup Environment Variables
-Create a .env file in the root folder with:
 
-```bash
-DATABASE_URL=your_Postgtesql_url
+Create a .env file in the server folder with:
 
-#Clerk Auth
-CLERK_PUBLISHABLE_KEY=your_clerk_url
-CLERK_SECRET_KEY=your_clerk_key
+DATABASE_URL=your_postgresql_url
 
-#Google Gemini
+# Clerk Auth
+CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+# Google Gemini
 GEMINI_API_KEY=your_gemini_key
 
-#Clipdrop
+# Clipdrop
 CLIPDROP_API_KEY=your_clipdrop_key
 
-#Cloudinary
+# Cloudinary
 CLOUDINARY_CLOUD_NAME=your_cloudinary_name
 CLOUDINARY_API_KEY=your_cloudinary_key
 CLOUDINARY_API_SECRET=your_cloudinary_secret
 
----
-
-Run the Server - 
-```bash 
+Run the Server
 npm run dev
----
 
 3️⃣ Client Setup
-```bash
 cd ..
-cd client 
----
+cd client
+npm install
+
 Setup Environment Variables
-Create a .env file in the root folder with:
-```bash
+
+Create a .env file in the client folder with:
+
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 VITE_BASE_URL=your_backend_url
----
-Run the Server - 
-```bash
+
+Run the Client
 npm run dev
----
+
+💡 Future Improvements
+
+Add custom user dashboards to track previous AI generations
+
+Integrate AI-powered code assistant module
+
+Introduce team collaboration features with shared projects
+
+Implement billing & subscription with Stripe integration
