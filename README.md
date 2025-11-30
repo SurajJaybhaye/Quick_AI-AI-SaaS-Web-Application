@@ -56,19 +56,21 @@ Upload your resume and get instant, AI-based feedback to improve structure, read
 
 ## 🛠️ Getting Started  
 
-### 1️⃣ Clone the Repository  
-```bash
+### Clone the Repository  
+```
 git clone https://github.com/SurajJaybhaye/Quick_AI-AI-SaaS-Web-Application.git
 cd Quick_AI-AI-SaaS-Web-Application
+```
 
-2️⃣ Server Setup
+### Server Setup
+```
 cd server
 npm install
+```
 
-Setup Environment Variables
+### Setup Environment Variables Create a .env file in the server folder with:
 
-Create a .env file in the server folder with:
-
+```
 DATABASE_URL=your_postgresql_url
 
 # Clerk Auth
@@ -85,26 +87,28 @@ CLIPDROP_API_KEY=your_clipdrop_key
 CLOUDINARY_CLOUD_NAME=your_cloudinary_name
 CLOUDINARY_API_KEY=your_cloudinary_key
 CLOUDINARY_API_SECRET=your_cloudinary_secret
-
-Run the Server
+```
+### Run the Server
+```
 npm run dev
-
-3️⃣ Client Setup
+```
+### 3️⃣ Client Setup
+```
 cd ..
 cd client
 npm install
-
-Setup Environment Variables
-
-Create a .env file in the client folder with:
-
+```
+### Setup Environment Variables Create a .env file in the client folder with:
+```
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 VITE_BASE_URL=your_backend_url
-
-Run the Client
+```
+### Run the Client
+```
 npm run dev
+```
 
-💡 Future Improvements
+## 💡 Future Improvements
 
 Add custom user dashboards to track previous AI generations
 
